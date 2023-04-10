@@ -1,6 +1,7 @@
 # Minimal_I2C
 Minimal I2C Libary for 8 Bit Microcontroller, Can be used for 16/32/64 Bit Microcontrollers aswell but you'd have to manually adjust the variable Sizes  
-  
+This only uses Software Bitbanging for communication
+
 The reason i wrote this was to use a I2C Slave with my attiny13a but space was a huge issue, its written in bare C without really using any libaries other than  stdio.h
 
 ## Usage :
