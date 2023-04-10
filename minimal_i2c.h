@@ -33,19 +33,6 @@ void startcomm(i2c_slave* slave);
 void endcomm(i2c_slave* slave);
 
 /**
-  * @brief sends a bit with a one
-  * @param slave, pointer for i2c slave
-*/
-void sendOne(i2c_slave* slave);
-
-/**
-  * @brief sends a bit with a zero
-  * @param slave, pointer for i2c slave
-*/
-void sendZero(i2c_slave* slave);
-
-
-/**
   * @brief sends a byte
   * @param data, the byte to send
   * @param slave, pointer for i2c slave
