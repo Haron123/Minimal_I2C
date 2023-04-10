@@ -35,7 +35,7 @@ void sendByte(int8_t data, i2c_slave* slave)
 		{
 			*slave->pPort &= ~(1 << slave->datapin); // Set Data low
 			*slave->pPort |= (1 << slave->clockpin); // Set Clock high
-	*		slave->pPort &= ~(1 << slave->clockpin); // Set Clock low
+			*slave->pPort &= ~(1 << slave->clockpin); // Set Clock low
 		}
 		else
 		{
