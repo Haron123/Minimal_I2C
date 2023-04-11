@@ -39,12 +39,5 @@ void endcomm(i2c_slave* slave);
 */
 void sendByte(int8_t data, i2c_slave* slave);
 
-/**
-  * @brief skips the acknowledge bit
-  * @param slave, pointer for i2c slave
-*/
-void skipAck(i2c_slave* slave);
-
-
 
 #endif
