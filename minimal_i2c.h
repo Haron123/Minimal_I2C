@@ -6,8 +6,8 @@
 // Struct for i2c slaves
 typedef struct
 {
-	int8_t clockpin;
-	int8_t datapin;
+	uint8_t clockpin;
+	uint8_t datapin;
 	volatile int8_t* pPort;
 } i2c_slave;
 
@@ -18,7 +18,7 @@ typedef struct
   * @param pPort, Pointer to the Address of the Port the above pins are located
   * @retval the created i2c slave
 */
-i2c_slave create_i2cslave(int8_t clockpin, int8_t datapin, volatile int8_t* pPort);
+i2c_slave create_i2cslave(uint8_t clockpin, uint8_t datapin, volatile uint8_t* pPort);
 
 /**
   * @brief starts the i2c communication
